@@ -64,7 +64,7 @@ a{
 }
 
 .invite{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
 }
 
@@ -78,7 +78,7 @@ a{
 
 }
 .skillset-title{
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: bold;
     color: #880d1e;
 }
@@ -119,6 +119,9 @@ a{
 
 }
 
+.pro-details{
+    font-size: 1rem;
+}
 
 .listofprojects{
     display: flex;
