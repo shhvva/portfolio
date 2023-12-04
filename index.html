@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shva</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    
-</head>
-<body>
-
-    <nav class="nav flex" >
-        <div>
-            <p class="name">
-                shva
-            </p>
-        </div>
-        <div class="nav-2">
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact Me</a>
-                        
-        </div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="nav flex">
+      <div>
+        <p class="name">shva</p>
+      </div>
+      <div class="nav-2">
+        <a href="#projects">Projects</a>
+      </div>
     </nav>
 
     <main>
-        <div class="intro">
-            <p class="intro-para">
-                <span class="invite">Heyy,</span>
-                <br>
-                <br>
-                <span class="intro-para">
-                    I am Shiva Shankar a <b>badass</b> coder from the streets of India,<br>
-                    I love to build applications and solve complex problems using C/C++
-                </span>
+      <div class="intro">
+        <p class="intro-para">
+          <span class="invite">Heyy,</span>
+          <br />
+          <br />
+          <span class="intro-para">
+            I am Shiva Shankar, a passionate coder and application developer
+            with a fervor for continuous learning in the ever-evolving realm of
+            Computer Science. 
+          </span>
+        </p>
+        <img src="assets/intro-img.jpg" alt="img" class="img" />
+      </div>
+
+      <div class="skillset">
+        <div class="skillset-title">
+          <p>My Skillset</p>
+        </div>
+        <div>
+          <p class="langs">
+            C/C++ ,Python ,Java ,JavaScript ,React ,SQL and growing ..
+          </p>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="project-title">
+          <p>Projects</p>
+        </div>
+        <div class="listofprojects" id="projects">
+          <div class="FoodDesc_Card card" onclick="takemeto1()">
+            <p class="pro-title">FoodDesc</p>
+            <p class="pro-details">
+              I developed a dynamic website using the Edamam API, HTML, CSS, and
+              JavaScript. Leveraging the Edamam API, the website fetches and
+              displays six recipes based on user input, allowing them to explore
+              diverse culinary options. Additionally, the website offers a
+              calorie count feature, enabling users to retrieve nutritional
+              information for any specified food item.Upon clicking the recipe
+              the webpage redirects you to the recipe's original webpage giving
+              the user a more detailed explanation of the dish. This project
+              allowed me to gain proficiency in API web development and creating
+              a functional and responsive user interface. The website is
+              currently hosted online.
             </p>
-            <img src="assets/intro-img.jpg" alt="img" class ="img">
-        </div>
+          </div>
 
-        <div class="skillset">
-            <div class="skillset-title">
-                <p>
-                    My Skillset
-                </p>
-            </div>
-            <div>
-                <p class="langs">
-                    C/C++ ,Python ,Java ,HTML ,CSS ,JavaScript ,SQL and growing ..
-                </p>
-            </div>
+          <div class="YTWP_Card card" onclick="takemeto2()">
+            <p class="pro-title">YouTube WatchParty</p>
+            <p>
+              I developed a web application featuring an integrated YouTube video
+              playback, complete with a custom-designed progress bar and
+              controls for play, pause, and navigation. What sets this project
+              apart is its incorporation of real-time synchronization using web
+              sockets, enabling a collaborative viewing experience across
+              multiple devices. Users can seamlessly enjoy videos in sync, with
+              actions such as play, pause, mute, and navigation mirrored in
+              real-time on all connected devices. This project not only
+              showcases my skills in web development and user interface design
+              but also highlights my ability to implement advanced features,
+              such as web sockets
+            </p>
+          </div>
+          <div class="AIML_card card">
+            <p class="pro-title">AI ML Project</p>
+            <p>status : In progress</p>
+          </div>
         </div>
-        <div class="projects">
-            <div class="project-title">
-                <p>
-                    Projects
-                </p>
-            </div>
-            <div class="listofprojects" id = "projects">
-                <div class="DBMS card">
-                    <p class="pro-title">
-                        Database Management System project
-                    </p>
-                    <p>
-                        status : In progress
-                    </p>
-                </div>
-                <a href = "https://shhvva.github.io/FoodDesc/" target = "_blank">
-                    <div class="API-1 card">
-                    <p class="pro-title">
-                            API project
-                    </p>
-                    <p>
-                        Edamam API build with HTML, CSS, JavaScript. It gives recipe info and calorie count
-                    </p>
-                </div>
-                </a>
-            </div>
-        </div>
-            
-
-
+      </div>
     </main>
 
     <footer>
-        <span id="contact" class="contact">
-            contact me
-        </span>
-        <p class="contact-info">
-            <br>
-            <span>mendeshivashankar@gmail</span><br>
-            <span>21r01a05p0@cmritonline.ac.in</span>
-        </p>
+      <span id="contact" class="contact"> contact me </span>
+      <p class="contact-info">
+        <br />
+        <span>mendeshivashankar@gmail.com</span><br />
+        <span>21r01a05p0@cmritonline.ac.in</span>
+      </p>
     </footer>
-
-</body>
+  </body>
+  <script>
+    function takemeto1() {
+      window.open("https://shhvva.github.io/FoodDesc/", "_blank");
+    }
+    function takemeto2() {
+      window.open("https://github.com/shhvva/YTWatchparty", "_blank");
+    }
+  </script>
 </html>
